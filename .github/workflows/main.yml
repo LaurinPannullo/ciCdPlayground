@@ -36,9 +36,5 @@ jobs:
         uses: janisz/action@v2
         with:
           # Path(s) to test output file(s) to analyze
-          paths: 
-          # File to write with rendered output
-          output: # optional
-          # Types of tests to show in the results table
-          show: # optional
-
+          paths: '**/reports/*.xml'
+          
