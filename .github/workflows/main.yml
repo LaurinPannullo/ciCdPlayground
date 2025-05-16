@@ -31,4 +31,14 @@ jobs:
       - name: Integration tests
         run: yarn test:e2e
         continue-on-error: true
+        
+      - name: Junit Test Dashboard
+        uses: janisz/action@v2
+        with:
+          # Path(s) to test output file(s) to analyze
+          paths: 
+          # File to write with rendered output
+          output: # optional
+          # Types of tests to show in the results table
+          show: # optional
 
